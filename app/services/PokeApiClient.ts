@@ -3,6 +3,8 @@ import { Pokemon } from "~/services/pokemon";
 export class PokeApiClient {
   private baseUrl = "https://pokeapi.co/api/v2";
 
+  // yolo
+
   async getPokemonList(limit: number = 151): Promise<Pokemon[]> {
     const response = await fetch(`${this.baseUrl}/pokemon?limit=${limit}`);
     const data = await response.json();
